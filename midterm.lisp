@@ -16,3 +16,15 @@
 		)
 	)	
 )
+
+#|
+	QUESTION 2
+|#
+
+(defun r (A N L)
+	(cond ((eq N 0) L)
+		((null L) nil)
+		((eq A (car L)) (r A (- N 1) (cdr L)))
+		(t (cons (car L) (r A (- N 1) (cdr L))))
+	)
+)
