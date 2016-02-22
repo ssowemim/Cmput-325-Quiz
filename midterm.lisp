@@ -1,3 +1,8 @@
+#|
+	QUESTION 1
+	Even lists returns a T value, while odd lists returns the last list value
+|#
+
 (defun t1 (L)
 	(if (null L)
 		; first argument
@@ -11,7 +16,3 @@
 		)
 	)	
 )
-
-#|
-	Even lists returns a T value, while odd lists returns the last list value
-|#
